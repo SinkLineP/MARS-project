@@ -1,0 +1,87 @@
+.news {
+
+  // &-title {
+  //   font-family: Roboto;
+  //   font-weight: bold;
+  //   font-size: 72px;
+  //   line-height: 84px;
+
+  //   color: #000000;
+  //   text-align: center;
+  //   padding: 68px 51px;
+  //   margin-bottom: 66px;
+
+  //   background: rgba(13, 147, 35, 0.71);
+  // }
+
+  
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      position: relative;
+      width: 285px;
+      height: 187px;
+      display: flex;
+      margin-bottom: 100px;
+
+      &-name {
+        width: 100%;
+        height: 52px;
+        margin-top: 116px;
+        padding-left: 7px;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        background: rgba(13, 147, 35, 0.76);
+        color: #FFFFFF;
+      }
+
+      &-tooltip {
+        position: absolute;
+        max-width: 500px;
+        width:30vw;
+        pointer-events: none;
+        appearance: none;
+        background-color: #0D9323;
+        padding: 10px 10px 10px 10px;
+        z-index: 1;
+        animation: fadeIn 0.4s ease-in-out;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &-description {
+          font-family: IM FELL DW Pica SC;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 30px;
+        }
+
+        &-switchedLeft{
+          left: 70%;
+        }
+
+        &-switchedRight{
+          left: 29%;
+        }
+        @media only screen and (max-width: 1100px) {
+          &-switchedLeft{
+            left: 50%;
+          }
+
+          &-switchedRight{
+            left: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tops {
+  margin: 100px 50px 0px 50px;
+}
